@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.leftMenu {
+	background: #FFF;
+	width: 118px;
+	float: left;
+}
+
+.leftMenu .bg-menuNav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 118px;
+	height: 100%;
+	border-right: 1px solid #DCDCDC;
+	background: #fcfcff;
+	z-index: 9
+}
+
+.leftMenu ul {
+	position: relative;
+	z-index: 11
+}
+
+.leftMenu li {
+	border-bottom: 1px solid #CCC
+}
+
+.leftMenu li a {
+	border-top: 1px solid #FFF
+}
+
+.leftMenu li a,
+.leftMenu li a:hover {
+	height: 37px;
+	width: 118px;
+	display: block;
+	line-height: 37px;
+	font-size: 12px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background: #F9F9FB;
+}
+
+.leftMenu li a:hover,
+.leftMenu li.active a {
+	color: #727272;
+	transition: all .1s ease-in;
+}
+
+.leftMenu a i {
+	display: block;
+	float: right;
+	width: 8px;
+	height: 8px;
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+	border-radius: 1px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-mstransform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	position: relative;
+	top: 16px;
+	right: 9px;
+	margin-left: 10px;
+}
+
+.leftMenu a i.menu-arrow-bottom {
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	top: 11px;
+}
+
+.leftMenu li .menu {
+	display: none;
+	position: relative;
+	left: 0px;
+	padding-top: 0px;
+	background: #F4F4F6;
+	border: none
+}
+
+.leftMenu li .menu li {
+	border: none
+}
+
+.leftMenu li .menu a {
+	height: 37px;
+	line-height: 37px;
+	background: #fff;
+	font-size: 12px;
+	color: #727272;
+	border-top: 1px solid #dcdcdc;
+	text-align: left;
+	padding-left: 24px;
+	width: 93px
+}
+
+.leftMenu li .menu a:hover {
+	background: #ECECEC;
+	color: #727272;
+	transition: all .1s ease-in;
+}
+
+.leftMenu li.on a,
+.leftMenu li.on a:hover {
+	border-top: 1px solid #dcdcdc;
+	background: #FFF;
+	color: #fd883b;
+	width: auto;
+	overflow: hidden;
+	transition: all .1s ease-in;
+}

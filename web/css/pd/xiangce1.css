@@ -1,0 +1,78 @@
+.kuang{
+	border:rgba(243,7,11,1.00) dashed 1px
+	
+}
+.ceyi{
+	left: 381px;
+	text-align: center;
+	margin-left: 190px;
+}
+.ceyi1{
+	width:700px;
+	height:auto;
+	display:block;
+	}
+.ceyi2{
+	position:relative;
+	top:10px;
+	margin-bottom:15px;
+}
+.albums-tab{
+	float: left;
+	width: 700px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+}
+
+.albums-tab-thumb{
+	float: left;
+	width: 700px;
+	height: 300px;
+}
+.albums-tab-thumb img {
+	height: 300px;
+	width: 700px;
+	background-color: rgba(255,255,255,1);
+	padding: 5px;		
+}
+
+.sim-anim-2{
+	position: relative;
+	}	
+.sim-anim-2 img{
+	position: absolute;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	left: 3px;
+	top: -1px;
+	}
+.sim-anim-2:hover img{
+	z-index: 1;
+	}			
+.sim-anim-2:hover img:nth-child(1){
+    -ms-transform: translate(-40%,-80%) rotate(-40deg); 
+   	-webkit-transform: translate(-40%,-80%)  rotate(-40deg); 
+    transform: translate(-40%,-80%)  rotate(-40deg);
+	}
+.sim-anim-2:hover img:nth-child(2){
+    -ms-transform: translate(-30%,-60%) rotate(-30deg); 
+   	-webkit-transform: translate(-30%,-60%)  rotate(-30deg); 
+    transform: translate(-30%,-60%)  rotate(-30deg);
+	}	
+.sim-anim-2:hover img:nth-child(3){
+    -ms-transform: translate(-20%,-40%) rotate(-20deg); 
+   	-webkit-transform: translate(-20%,-40%)  rotate(-20deg); 
+    transform: translate(-20%,-40%)  rotate(-20deg);
+	}		
+.sim-anim-2:hover img:nth-child(4){
+    -ms-transform: translate(-10%,-20%) rotate(-10deg); 
+   	-webkit-transform: translate(-10%,-20%)  rotate(-10deg); 
+    transform: translate(-10%,-20%)  rotate(-10deg);
+	}
+.sim-anim-2:hover img:nth-child(5){
+  	-ms-transform: scale(1.1,1.1) rotate(-5deg); 
+    -webkit-transform: scale(1.1,1.1) rotate(-5deg); 
+    transform: scale(1.1,1.1) rotate(-5deg);
+	}

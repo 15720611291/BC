@@ -1,0 +1,13 @@
+.introduce{
+	background: url(../img/zhuti.jpg);
+	width:100%;
+	height: 700px;
+}
+
+.comment{
+	background: url(../img/comment.jpg) contain;
+	width: auto;
+	height: 1000px;
+	
+	
+}

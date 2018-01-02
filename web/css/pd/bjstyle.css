@@ -1,0 +1,34 @@
+/*hj*/
+.bj_xqx {
+    /*width: 100%;*/
+   /* background-image: url(../../images/bj_xqx.jpg);*/
+    /*background-repeat: no-repeat;*/
+    position: absolute;
+    z-index: 1;
+    width: 10%;
+    top:0em;
+}
+
+li {
+    list-style-type: none;
+}
+
+.pj_one {
+    width: 740px;
+    height: 150px;
+    position: relative;
+    left: 380px;
+    top: 240px;
+
+}
+
+.page_nav{
+    position: absolute;
+    top:82%;
+    left:55%;
+}
+.tourist_p1 img:hover{
+    position:absolute;
+    left: 25em;
+   transform: scale(4);
+}
