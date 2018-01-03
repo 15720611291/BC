@@ -8,10 +8,6 @@ public class VisitorsDaoImpl extends BaseDao<Visitors> implements VisitorsDao {
 	@Override
 	public Visitors login(Visitors visitors) {
 		String sql="select id,name,password,email from visitors where name=? and password=?";
-		
-		
-		
-		
 		return this.getBean(sql, visitors.getName(),visitors.getPassword());
 	}
 
@@ -22,4 +18,11 @@ public class VisitorsDaoImpl extends BaseDao<Visitors> implements VisitorsDao {
 	
 
 }
+
+	@Override
+	public Visitors checkUser(String name) {
+		String sql="select id,name,password,email from visitors where name=?";
+		return this.getBean(sql,name);
+	}
+
 }
