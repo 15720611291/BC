@@ -1,11 +1,20 @@
+﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<title>酒店预订</title>
+<link href="css/pd/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/pd/font-awesome.css" rel="stylesheet">
+<link href="css/pd/ptxt.wav.css" rel="stylesheet" />
+<link href="css/pd/zzhuti.css" rel="stylesheet" type="text/css" />
+<!--
+	描述：文字动态
+-->
+<link rel="stylesheet" type="text/css" href="css/ptxt.wav.css">
+
+<script src="js/txt.wav.min.js"></script>
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,16 +22,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="application/x-javascript"> addEvenListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!---->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <!---->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
+
 <!---strat-date-piker---->
-<!-- requried-jsfiles-for owl -->
+<!-- requried-jsfiles-for owl -->  
 							<link href="css/owl.carousel.css" rel="stylesheet">
 							    <script src="js/owl.carousel.js"></script>
 							        <script>
@@ -36,67 +44,16 @@
 							        pagination : true,
 							      });
 							    });
+							    
+							    
+							    
 							    </script>
 							 <!-- //requried-jsfiles-for owl -->
-
+<link rel="stylesheet" href="css/swiper.min.css">
+  
 </head>
 <body>
-	<div class="banner-section">
-		<section class="slider">
-			<div class="flexslider">
-				<ul class="slides">
-					<li>
-						<div class="slider-info">
-							<img src="images/ba1.jpg" class="img-responsive" alt="">
-						</div>
-						<div class="container">
-							<div class="banner-text">
-								<h3>Outdoor & Indoor Luxury</h3>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="slider-info">
-							<img src="images/ba2.jpg" class="img-responsive" alt="">
-						</div>
-						<div class="container">
-							<div class="banner-text">
-								<h3>Luxury & Oriental Harmony</h3>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="slider-info">
-							<img src="images/ba3.jpg" class="img-responsive" alt="">
-						</div>
-						<div class="container">
-							<div class="banner-text">
-								<h3>A Brand New Hotel</h3>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
-			<!-- FlexSlider -->
-			<script defer src="js/jquery.flexslider.js"></script>
-				<script type="text/javascript">
-					$(function(){
-						SyntaxHighlighter.all();
-					});
-					$(window).load(function(){
-					$('.flexslider').flexslider({
-					animation: "slide",
-					start: function(slider){
-					  $('body').removeClass('loading');
-					}
-					});
-					});
-				</script>
-			<!-- FlexSlider -->
-			<!-- slider -->
-	</div>
-    <div class="header">
+<div class="header">
 		<div class="container">
 			<div class="header-menu">
 				<nav class="navbar navbar-default">
@@ -110,19 +67,19 @@
 							<span class="icon-bar"></span>
 						  </button>
 						  <div class="navbar-brand logo">
-								<h1><a href="index.jsp"><span>Best  </span> Hotel</a></h1>
-							</div>
+								<h1><a href="#"><img src="img/LOGO-1 - 副本1.png"></h1>
+						  </div>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						  <ul class="nav navbar-nav">
-							<li class="active"><a href="index.jsp" data-hover="Home">Home </a></li>
-							<li><a href="about.html" data-hover="About">About</a></li>
-							<li><a data-hover="Restaurant" href="restaurant.html">Restaurant</a></li>
-							<li><a data-hover="Gallery" href="gallery.html">Gallery</a></li>
-							<li><a data-hover="Rooms" href="rooms.jsp">Rooms</a></li>
-							  <li><a  href="codes.html" data-hover="codes">Codes</a></li>
-							 <li><a data-hover="Contact" href="contact.html">Contact</a></li>
+							<li class="active"><a href="index1.jsp" data-hover="Home"><img src="img/childmenu1.png"/></a></li>
+							<li class="fd"><a href="ticket.jsp" data-hover="About"><img src="img/childmenu2.png"/></a></li>
+							<li class="fd"><a data-hover="Restaurant" href="rooms.jsp"><img src="img/childmenu3.png"/></a></li>
+							<li class="fd"><a data-hover="Gallery" href="/servlet/TranvelServlet?method=findTravelEntity"><img src="img/childmenu4.png"/></a></li>
+							<li class="fd"><a data-hover="Rooms" href="login.jsp"><img src="img/childmenu5.png"/></a></li>
+							<li class="fd"><a href="register.jsp" data-hover="codes"><img src="img/childmenu6.png"/></a></li>
+	 						
 							 
 						  </ul>
 						</div><!-- /.navbar-collapse -->
@@ -131,330 +88,132 @@
 			<div class="clearfix"></div>
 			</div>	
 		</div> 
-	</div>
-		<!---header--->		
+</div>
+<div class="ticketbanner">
+		<!-- Swiper -->
+ <section class="pc-banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-center none-effect"><a href="#"><img src="images/ticketba5.jpg" ></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/ticketba1.jpg" ></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/ticketba2.jpg" ></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/ticketba3.jpg" ></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/ticketba4.jpg" ></a></div>
+        </div>
+        
+    </div>
+    <div class="swiper-pagination"></div>
+	<div class="button">
+     <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div></div>
+</section>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+	window.onload = function() {
+    var swiper = new Swiper('.swiper-container',{
+		autoplay:3000,
+		speed:1000,
+		autoplayDisableOnInteraction : false,
+		loop:true,
+		centeredSlides : true,
+		slidesPerView:2,
+        pagination : '.swiper-pagination',
+		paginationClickable:true,
+		prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+		onInit:function(swiper){
+			swiper.slides[2].className="swiper-slide swiper-slide-active";//第一次打开不要动画
+			},
+        breakpoints: { 
+                668: {
+                    slidesPerView: 1,
+                 }
+            }
+		});
+		}
+    </script>
+		
+		
+<!--
+	作者：1102416712@qq.com
+	时间：2017-12-29
+	描述：购票显示部分
+-->
+<!---header--->		
 		<div class="content">
-			<!---welcome--->
-			<div class="welcome">
+			<div class="restaurant">
 				<div class="container">
-					<h2 class="tittle">Welcome To Hotel</h2>
-						<p class="wel text">Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.</p>
-					<div class="wel-grids">
-						<div class="col-md-3 wel-grid">
-							<img src="images/w1.jpg" class="img-responsive gray" alt=""/>
-							<h4>Premier Suite</h4>
-							<p>Lorem ipsum dolor sit amet, consect adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed.</p>
-						</div>
-						<div class="col-md-3 wel-grid">
-							<img src="images/w2.jpg" class="img-responsive gray" alt=""/>
-							<h4>Deluxe Suite</h4>
-							<p>Lorem ipsum dolor sit amet, consect adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed.</p>
-						</div>
-						<div class="col-md-3 wel-grid">
-							<img src="images/w3.jpg" class="img-responsive gray" alt=""/>
-							<h4>Luxury Suite</h4>
-							<p>Lorem ipsum dolor sit amet, consect adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed.</p>
-						</div>
-						<div class="col-md-3 wel-grid">
-							<img src="images/w4.jpg" class="img-responsive gray" alt=""/>
-							<h4>Spa Suite</h4>
-							<p>Lorem ipsum dolor sit amet, consect adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed.</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-			<!---welcome--->
-			<div class="resort-section">
-				<div class="container">
-					<h3 class="tittle">Resort latest <span>deals</span></h3>
-					<div class="resort-grids">
-				<!-- start content_slider -->
-						<div id="owl-demo" class="owl-carousel">
-					        <div class="item">
-					           <div class="col-md-6 cap-img">
-									<img src="images/p.jpg" class="img-responsive gray" alt=""/>
-								</div>
-								<div class="col-md-6 cap">
-									<h4>Surrounded By Custom Designed</h4>	
-									<ul class="cap1">
-										<li><i class="glyphicon glyphicon-map-marker"></i> 33 Street Name, City Name United States</li>
-										<li><i class="glyphicon glyphicon-plane"></i> US Airlines</li>
-										<li><i class="glyphicon glyphicon-road"></i> Free Transport</li>
-									</ul>										
-									<p>Duis at ante nec neque rhoncus pretium. Ut placerat euismod nibh industry's stand orci donec mollis, est non scelerisque blandit, velit nunc laoreet dol scrambled it to augue non elit aliquam in vehicula sem phasellu  consectetur adipiscing elit donec porttitor lectus at neque sollicitudin.</p>
-									<div class="detais">
-										<div class="col-md-9 deatils-left">
-											<div class="list">
-												<ul>
-													<li><i class="glyphicon glyphicon-thumbs-up"></i> Free Private Parking is Available</li>
-													<li><i class="glyphicon glyphicon-cutlery"></i> In Room Dining is Available 09:00 P.M. - 12:09 P.M.</li>
-													<li><i class="glyphicon glyphicon-signal"></i> Free High Speed Wi-Fi Internet in Room</li>
-												</ul>
-											</div>
-										</div>
-										<div class="col-md-3 deatils-right">
-											<div class="detail-top">
-												<span>PER NIGHT</span>
-												<h4>$45</h4>
-											</div>
-										</div>
-										<div class="clearfix"> </div>
+					<h2 class="tittle" style="color: #58cdff;">蓝鲸灵网上订票</h2>
+					<div class="rest-grids">
+						<div class="rest-grid">
+							<div class="pedit">
+								<div class="rest-bottom">
+									<!--
+                                    	作者：1102416712@qq.com
+                                    	时间：2017-12-29
+                                    	描述：第一部分公园显示
+                                    -->
+									<div class="col-md-6 rest-left">
+										<img src="images/r2.jpg" class="img-responsive gray" alt=""/>
+										<h4>家庭票<span style="color: orange">￥1299</span><span style="text-decoration: line-through">￥1399</span></h4>
+										<p><h4><a href="cat2.jsp">购买</a></h4></p>
 									</div>
-								</div>
-					            <div class="clearfix"> </div>
-					        </div>
-					        <div class="item">
-								<div class="col-md-6 cap-img">
-									<img src="images/p1.jpg" class="img-responsive gray" alt=""/>
-								</div>
-								<div class="col-md-6 cap">
-									<h4>Free High Speed Wi-Fi Internet in Room</h4>
-									<ul class="cap1">
-										<li><i class="glyphicon glyphicon-map-marker"></i> 33 Street Name, City Name United States</li>
-										<li><i class="glyphicon glyphicon-plane"></i> US Airlines</li>
-										<li><i class="glyphicon glyphicon-road"></i> Free Transport</li>
-									</ul>		
-									<p>Duis at ante nec neque rhoncus pretium. Ut placerat euismod nibh industry's stand orci donec mollis, est non scelerisque blandit, velit nunc laoreet dol scrambled it to augue non elit aliquam in vehicula sem phasellu  consectetur adipiscing elit donec porttitor lectus at neque sollicitudin.</p>
-									<div class="detais">
-										<div class="col-md-9 deatils-left">
-											<div class="list">
-												<ul>
-													<li><i class="glyphicon glyphicon-thumbs-up"></i> Free Private Parking is Available</li>
-													<li><i class="glyphicon glyphicon-cutlery"></i> In Room Dining is Available 09:00 P.M. - 12:09 P.M.</li>
-													<li><i class="glyphicon glyphicon-signal"></i> Free High Speed Wi-Fi Internet in Room</li>
-												</ul>
-											</div>
-										</div>
-										<div class="col-md-3 deatils-right">
-											<div class="detail-top">
-												<span>PER NIGHT</span>
-												<h4>$45</h4>
-											</div>
-										</div>
-										<div class="clearfix"> </div>
+									<div class="col-md-6 rest-left">
+									<img src="images/r3.jpg" class="img-responsive gray" alt=""/>
+										<h4>情侣票<span style="color: orange">￥1499</span><span style="text-decoration: line-through">￥1599</span></h4>
+										<p><h4><a href="cat2.jsp">购买</a></h4></p>
+									</div>							  
+									<div class="col-md-6 rest-left">
+									<img src="images/r3.jpg" class="img-responsive gray" alt=""/>
+										<h4>单人票<span style="color: orange">￥299</span><span style="text-decoration: line-through">￥399</span></h4>
+										<p><h4><a href="cat2.jsp">购买</a></h4></p>
 									</div>
-								</div>
-					            <div class="clearfix"> </div>
-					        </div>
-					        <div class="item">
-					           <div class="col-md-6 cap-img">
-									<img src="images/p2.jpg" class="img-responsive gray" alt=""/>
-								</div>
-								<div class="col-md-6 cap">
-									<h4>Surrounded By Custom Designed</h4>	
-									<ul class="cap1">
-										<li><i class="glyphicon glyphicon-map-marker"></i> 33 Street Name, City Name United States</li>
-										<li><i class="glyphicon glyphicon-plane"></i> US Airlines</li>
-										<li><i class="glyphicon glyphicon-road"></i> Free Transport</li>
-									</ul>										
-									<p>Duis at ante nec neque rhoncus pretium. Ut placerat euismod nibh industry's stand orci donec mollis, est non scelerisque blandit, velit nunc laoreet dol scrambled it to augue non elit aliquam in vehicula sem phasellu  consectetur adipiscing elit donec porttitor lectus at neque sollicitudin.</p>
-									<div class="detais">
-										<div class="col-md-9 deatils-left">
-											<div class="list">
-												<ul>
-													<li><i class="glyphicon glyphicon-thumbs-up"></i> Free Private Parking is Available</li>
-													<li><i class="glyphicon glyphicon-cutlery"></i> In Room Dining is Available 09:00 P.M.-12:09 P.M.</li>
-													<li><i class="glyphicon glyphicon-signal"></i> Free High Speed Wi-Fi Internet in Room</li>
-												</ul>
-											</div>
-										</div>
-										<div class="col-md-3 deatils-right">
-											<div class="detail-top">
-												<span>PER NIGHT</span>
-												<h4>$45</h4>
-											</div>
-										</div>
-										<div class="clearfix"> </div>
+									<div class="clearfix"></div>
+									
+
+									
+									<div class="rest-bottom">
+									<!--
+                                    	作者：1102416712@qq.com
+                                    	时间：2017-12-29
+                                    	描述：第一部分公园显示
+                                    -->
+									<div class="col-md-6 rest-left">
+										<img src="images/r2.jpg" class="img-responsive gray" alt=""/>
+										<h4>vip<span style="color: orange">￥2299</span><span style="text-decoration: line-through">￥2399</span></h4>
+										<p><h4><a href="cat2.jsp">购买</a></h4></p>
 									</div>
+									<div class="col-md-6 rest-left">
+									<img src="images/r3.jpg" class="img-responsive gray" alt=""/>
+										<h4>Common<span style="color: orange">￥999</span><span style="text-decoration: line-through">￥1099</span></h4>
+										<p><h4><a href="cat2.jsp">购买</a></h4></p>
+									</div>							  
+									<div class="col-md-6 rest-left">
+									<img src="images/r3.jpg" class="img-responsive gray" alt=""/>
+										<h4>children<span style="color: orange">￥99</span><span style="text-decoration: line-through">￥199</span></h4>
+										<p><h4><a href="cat2.jsp">购买</a></h4></p>
+									</div>
+									<div class="clearfix"></div>
+									
 								</div>
-					            <div class="clearfix"> </div>
-					        </div>	
-				        </div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="superlist">
-				<div class="container">
-					<h3 class="tittle">Hand Picked by Superlist</h3>
-					<p class="wel text">Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.</p>
-					<div class="super-grids">
-						<div class="col-md-8 super-grid">
-							<div class="super-top">
-							<img src="images/s1.jpg" class="img-responsive gray" alt=""/>
-							</div>
-							<div class="super-bottom">
-								<div class="col-md-6 super-left">
-								<img src="images/s2.jpg" class="img-responsive gray" alt=""/>
-								</div>
-								<div class="col-md-6 super-right">
-								<img src="images/s3.jpg" class="img-responsive gray" alt=""/>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-						<div class="col-md-4 super-grid1">
-							<div class="super-top">
-								<img src="images/s4.jpg" class="img-responsive gray" alt=""/>
-									<h4>Luxury Suite</h4>
-									<p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.</p>
-							</div>
-						</div>
-							<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-			<div class="testimonial-section">
-				<div class="container">
-					<h3 class="tittle">Testimonials</h3>
-					<div class="testimonial-grids">
-						<div class="col-md-6 testimonial-grid">
-							<div class="testimonial-left">
-								<img src="images/t1.jpg" class="img-responsive" alt=""/>
-							</div>
-							<div class="testimonial-right">
-								<div class="testimonial-text">
-									<h5>Exactly What I Need</h5>
-								</div>
-								<div class="testimonial-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-								<div class="clearfix"></div>
-								<p>Quisque aliquet ornare nunc in viverra. Nullam ornare molestie ligula in luctus. Suspendisse ac cursus elit. Donec vel enim sit amet lorem vulputate condimentum.</p>
-								<div class="testimonial-sign">- Fiona Wilson</div><!-- /.testimonial-sign -->
-								</div>
-								<div class="clearfix"></div>
-						</div>
-						<div class="col-md-6 testimonial-grid test3">
-							<div class="testimonial-left">
-								<img src="images/t2.jpg" class="img-responsive" alt=""/>
-							</div>
-							<div class="testimonial-right">
-								<div class="testimonial-text">
-									<h5>Best Support Ever</h5>
-								</div>
-								<div class="testimonial-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-								<div class="clearfix"></div>
-								<p>Quisque aliquet ornare nunc in viverra. Nullam ornare molestie ligula in luctus. Suspendisse ac cursus elit. Donec vel enim sit amet lorem vulputate condimentum.</p>
-								<div class="testimonial-sign">- Fiona Wilson</div><!-- /.testimonial-sign -->
-							
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="testimonial-grids test2">
-						<div class="col-md-6 testimonial-grid">
-							<div class="testimonial-left">
-								<img src="images/t3.jpg" class="img-responsive" alt=""/>
-							</div>
-							<div class="testimonial-right">
-								<div class="testimonial-text">
-									<h5>Totally Impressed</h5>
-								</div>
-								<div class="testimonial-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-								<div class="clearfix"></div>
-								<p>Quisque aliquet ornare nunc in viverra. Nullam ornare molestie ligula in luctus. Suspendisse ac cursus elit. Donec vel enim sit amet lorem vulputate condimentum.</p>
-								<div class="testimonial-sign">- Kim Glove</div><!-- /.testimonial-sign -->
-								
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="col-md-6 testimonial-grid test3">
-							<div class="testimonial-left">
-								<img src="images/t8.jpg" class="img-responsive" alt=""/>
-							</div>
-							<div class="testimonial-right">
-								<div class="testimonial-text">
-									<h5>Exactly What I Need</h5>
-								</div>
-								<div class="testimonial-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-								<div class="clearfix"></div>
-								<p>Quisque aliquet ornare nunc in viverra. Nullam ornare molestie ligula in luctus. Suspendisse ac cursus elit. Donec vel enim sit amet lorem vulputate condimentum.</p>
-								<div class="testimonial-sign">- Fiona Wilson</div><!-- /.testimonial-sign -->
-							
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="testimonial-grids">
-						<div class="col-md-6 testimonial-grid">
-							<div class="testimonial-left">
-								<img src="images/t9.jpg" class="img-responsive" alt=""/>
-							</div>
-							<div class="testimonial-right">
-								<div class="testimonial-text">
-									<h5>Exactly What I Need</h5>
-								</div>
-								<div class="testimonial-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-								<div class="clearfix"></div>
-								<p>Quisque aliquet ornare nunc in viverra. Nullam ornare molestie ligula in luctus. Suspendisse ac cursus elit. Donec vel enim sit amet lorem vulputate condimentum.</p>
-								<div class="testimonial-sign">- Fiona Wilson</div><!-- /.testimonial-sign -->
-							
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="col-md-6 testimonial-grid test3">
-							<div class="testimonial-left">
-								<img src="images/t10.jpg" class="img-responsive" alt=""/>
-							</div>
-							<div class="testimonial-right">
-								<div class="testimonial-text">
-									<h5>Exactly What I Need</h5>
-								</div>
-								<div class="testimonial-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-								<div class="clearfix"></div>
-								<p>Quisque aliquet ornare nunc in viverra. Nullam ornare molestie ligula in luctus. Suspendisse ac cursus elit. Donec vel enim sit amet lorem vulputate condimentum.</p>
-								<div class="testimonial-sign">-Rachel Fast</div><!-- /.testimonial-sign -->
-							
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-		</div>
+			</div>			
+		<!--
+			作者：1102416712@qq.com
+			时间：2017-12-29
+			描述：尾部声明	
+		-->
 		<div class="footer-section">
 			<div class="container">
 				<div class="footer-grids">
 					<div class="col-md-3 footer-grid">
-						<h4>Get In Touch</h4>
+						<h4>联系我们</h4>
 						<ul>
 							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
 							<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
@@ -463,7 +222,7 @@
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4>Hotel top links</h4>
+						<h4>乐园相关</h4>
 						<ul>
 							<li>Our Story</li>
 							<li>Sleep Program</li>
@@ -472,21 +231,21 @@
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4>Our Rooms</h4>
+						<h4>个性化服务</h4>
 						<ul>
-							<li>Superior Room</li>
-							<li>Deluxe Room</li>
-							<li>Business Room</li>
-							<li>Executive Corner Room</li>
+							<li>vip通道</li>
+							<li>vip票务</li>
+							<li>私人订制</li>
+							<li>私人游行</li>
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4>Our Services </h4>
+						<h4>我们的服务 </h4>
 						<ul>
-							<li>Room services</li>
-							<li>Free internet Wifi</li>
-							<li>Television (50 channels)</li>
-							<li>Pets allowed</li>
+							<li>夜宵</li>
+							<li>饮料</li>
+							<li>安全设备</li>
+							<li>休闲区</li>
 						</ul>
 					</div>
 					<div class="clearfix"></div>
@@ -497,17 +256,15 @@
 			<div class="copy-section">
 				<div class="container">
 					<div class="footer-top">
-						<p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+						<p>Copyright &copy; 版权，最终解释权归朱小超组！</p>
 					</div>
-					<div class="social-icons">
-						<a href="#"><i class="icon"></i></a>
-						<a href="#"><i class="icon1"></i></a>
-						<a href="#"><i class="icon2"></i></a>
-						<a href="#"><i class="icon3"></i></a>
-					</div>
+					
 				</div>
 			</div>
 	<!--footer-->
-
+	<!--
+    	描述： animetion 动态
+    -->
+	<script src="js/pdjs/txt.wav.min.js"></script>
 </body>
 </html>
