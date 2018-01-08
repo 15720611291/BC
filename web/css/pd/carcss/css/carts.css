@@ -142,20 +142,22 @@ a:hover{
     width: 342px;
 }
 .order_lists .list_con .list_img{
-    width: 90px;
-    height: 90px;
+    width: 160px;
+    height: 160px;
     margin-top: 20px;
     float: left;
 }
 .order_lists .list_con .list_img img{
     width: 100%;
+
     vertical-align: top;
 }
 .order_lists .list_con .list_text{
-    margin: 20px 0 0 10px;
+    margin-bottom: 0px;
     line-height: 18px;
     width: 200px;
     float: left;
+
 }
 .order_lists .list_con .list_text a{
     color: #3c3c3c;
@@ -174,7 +176,7 @@ a:hover{
     color: #9c9c9c;
     line-height: 18px;
     margin-left: 15px;
-}
+}  
 .order_lists .list_price{
     width: 130px;
 }

@@ -1,4 +1,5 @@
 ﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +29,12 @@
 <script src="js/bootstrap.min.js"></script>
 <!---->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-
+	<style>
+		.gray:hover {
+			-webkit-filter:saturate(3);
+			filter:saturate(3);
+		}
+	</style>
 <!---strat-date-piker---->
 <!-- requried-jsfiles-for owl -->  
 							<link href="css/owl.carousel.css" rel="stylesheet">
@@ -73,12 +79,12 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						  <ul class="nav navbar-nav">
-							<li class="active"><a href="index1.jsp" data-hover="Home"><img src="img/childmenu1.png"/></a></li>
-							<li class="fd"><a href="ticket.jsp" data-hover="About"><img src="img/childmenu2.png"/></a></li>
-							<li class="fd"><a data-hover="Restaurant" href="rooms.jsp"><img src="img/childmenu3.png"/></a></li>
-							<li class="fd"><a data-hover="Gallery" href="/servlet/TranvelServlet?method=findTravelEntity"><img src="img/childmenu4.png"/></a></li>
-							<li class="fd"><a data-hover="Rooms" href="login.jsp"><img src="img/childmenu5.png"/></a></li>
-							<li class="fd"><a href="register.jsp" data-hover="codes"><img src="img/childmenu6.png"/></a></li>
+							  <li class="active"><a href="index1.jsp" data-hover="Home"><img src="img/zc1.png"></a></li>
+							  <li class="fd"><a href="/TicketServlet?method=getAllTickets" data-hover="About"><img src="img/zc2.png"></a></li>
+							  <li class="fd"><a data-hover="Restaurant" href="rooms.jsp" ><img src="img/zc3.png"></a></li>
+							  <li class="fd"><a data-hover="Gallery" href="/servlet/TranvelServlet?method=findTravelEntity"><img src="img/zc4.png"></a></li>
+							  <li class="fd"><a data-hover="Rooms" href="login.jsp" ><img src="img/zc5.png"></a></li>
+							  <li class="fd"><a href="register.jsp" data-hover="codes"><img src="img/zc6.png"></a></li>
 	 						
 							 
 						  </ul>
@@ -137,11 +143,7 @@
     </script>
 		
 		
-<!--
-	作者：1102416712@qq.com
-	时间：2017-12-29
-	描述：购票显示部分
--->
+
 <!---header--->		
 		<div class="content">
 			<div class="restaurant">
@@ -151,25 +153,24 @@
 						<div class="rest-grid">
 							<div class="pedit">
 								<div class="rest-bottom">
-									<!--
-                                    	作者：1102416712@qq.com
-                                    	时间：2017-12-29
-                                    	描述：第一部分公园显示
-                                    -->
+									<
+									<c:forEach items="${ticket}" var="tickets">
 									<div class="col-md-6 rest-left">
-										<img src="images/r2.jpg" class="img-responsive gray" alt=""/>
-										<h4>家庭票<span style="color: orange">￥1299</span><span style="text-decoration: line-through">￥1399</span></h4>
-										<p><h4><a href="cat2.jsp">购买</a></h4></p>
+										<img src="${tickets.imgPath}" class="img-responsive gray" alt=""/>
+										<h3>${tickets.type}<span style="color: orange">￥${tickets.price}</span><span style="text-decoration: line-through">￥${tickets.price-100}</span></h3>
+										<p>${tickets.introduce}<h3><a href="/TicketServlet?method=getTicketToCart&type=${tickets.type}">购买</a></h3></p>
+									</div>
+/
+									</c:forEach>
+									<%--<div class="col-md-6 rest-left">
+									<img src="images/r3.jpg" class="img-responsive gray" alt=""/>
+										<h4>单人票双日<span style="color: orange">￥1499</span>&nbsp;&nbsp;&nbsp;<span style="text-decoration: line-through">￥1599</span></h4>
+										<p>体验一个人的奇趣之旅<h4><a href="cat2.jsp">购买</a></h4></p>
 									</div>
 									<div class="col-md-6 rest-left">
 									<img src="images/r3.jpg" class="img-responsive gray" alt=""/>
-										<h4>情侣票<span style="color: orange">￥1499</span><span style="text-decoration: line-through">￥1599</span></h4>
-										<p><h4><a href="cat2.jsp">购买</a></h4></p>
-									</div>							  
-									<div class="col-md-6 rest-left">
-									<img src="images/r3.jpg" class="img-responsive gray" alt=""/>
-										<h4>单人票<span style="color: orange">￥299</span><span style="text-decoration: line-through">￥399</span></h4>
-										<p><h4><a href="cat2.jsp">购买</a></h4></p>
+										<h4>情侣票当日<span style="color: orange">￥299</span>&nbsp;&nbsp;&nbsp;<span style="text-decoration: line-through">￥399</span></h4>
+										<p>感受浪漫的二人世界<h4><a href="cat2.jsp">购买</a></h4></p>
 									</div>
 									<div class="clearfix"></div>
 									
@@ -183,20 +184,33 @@
                                     -->
 									<div class="col-md-6 rest-left">
 										<img src="images/r2.jpg" class="img-responsive gray" alt=""/>
-										<h4>vip<span style="color: orange">￥2299</span><span style="text-decoration: line-through">￥2399</span></h4>
-										<p><h4><a href="cat2.jsp">购买</a></h4></p>
+										<h4>情侣票双日<span style="color: orange">￥2299</span>&nbsp;&nbsp;&nbsp;<span style="text-decoration: line-through">￥2399</span></h4>
+										<p>感受浪漫的二人世界<h4><a href="cat2.jsp">购买</a></h4></p>
 									</div>
 									<div class="col-md-6 rest-left">
 									<img src="images/r3.jpg" class="img-responsive gray" alt=""/>
-										<h4>Common<span style="color: orange">￥999</span><span style="text-decoration: line-through">￥1099</span></h4>
-										<p><h4><a href="cat2.jsp">购买</a></h4></p>
+										<h4>家庭票当日<span style="color: orange">￥999</span>&nbsp;&nbsp;&nbsp;<span style="text-decoration: line-through">￥1099</span></h4>
+										<p>享受温馨的欢聚时光<h4><a href="cat2.jsp">购买</a></h4></p>
 									</div>							  
 									<div class="col-md-6 rest-left">
 									<img src="images/r3.jpg" class="img-responsive gray" alt=""/>
-										<h4>children<span style="color: orange">￥99</span><span style="text-decoration: line-through">￥199</span></h4>
-										<p><h4><a href="cat2.jsp">购买</a></h4></p>
+										<h4>家庭票双日<span style="color: orange">￥99</span>&nbsp;&nbsp;&nbsp;<span style="text-decoration: line-through">￥199</span></h4>
+										<p>享受温馨的欢聚时光<h4><a href="cat2.jsp">购买</a></h4></p>
 									</div>
 									<div class="clearfix"></div>
+
+										<div class="col-md-6 rest-left">
+											<img src="images/r2.jpg" class="img-responsive gray" alt=""/>
+											<h4>儿童票当日<span style="color: orange">￥2299</span>&nbsp;&nbsp;&nbsp;<span style="text-decoration: line-through">￥2399</span></h4>
+											<p>拥抱快乐享受生活<h4><a href="cat2.jsp">购买</a></h4></p>
+										</div>
+										<div class="col-md-6 rest-left">
+											<img src="images/r3.jpg" class="img-responsive gray" alt=""/>
+											<h4>儿童票双日<span style="color: orange">￥999</span>&nbsp;&nbsp;&nbsp;<span style="text-decoration: line-through">￥1099</span></h4>
+											<p>拥抱快乐享受生活h4><h4><a href="cat2.jsp">购买</a></h4></p>
+										</div>--%>
+
+
 									
 								</div>
 							</div>

@@ -28,7 +28,12 @@
 <script src="js/bootstrap.min.js"></script>
 <!---->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-
+	<style>
+		.gray:hover {
+			-webkit-filter:saturate(3);
+			filter:saturate(3);
+		}
+	</style>
 <!---strat-date-piker---->
 <!-- requried-jsfiles-for owl -->  
 							<link href="css/owl.carousel.css" rel="stylesheet">

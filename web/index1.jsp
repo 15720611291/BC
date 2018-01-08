@@ -35,6 +35,13 @@
 <script src="js/bootstrap.min.js"></script>
 <!---->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<style>
+		.gray:hover {
+			-webkit-filter:saturate(3);
+			filter:saturate(3);
+		}
+
+	</style>
 
 <!---strat-date-piker---->
 <!-- requried-jsfiles-for owl -->  
@@ -59,42 +66,7 @@
 
 </head>
 <body>
-	<div class="header">
-		<div class="container">
-			<div class="header-menu">
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						  </button>
-						  <div class="navbar-brand logo">
-								<h1><a href="#"><img src="img/LOGO-1 - 副本1.png"></h1>
-						  </div>
-						</div>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						  <ul class="nav navbar-nav">
-							<li class="active"><a href="index1.jsp" data-hover="Home"><img src="img/childmenu1.png"/></a></li>
-							<li class="fd"><a href="ticket.jsp" data-hover="About"><img src="img/childmenu2.png"/></a></li>
-							<li class="fd"><a data-hover="Restaurant" href="rooms.jsp"><img src="img/childmenu3.png"/></a></li>
-							<li class="fd"><a data-hover="Gallery" href="/servlet/TranvelServlet?method=findTravelEntity"><img src="img/childmenu4.png"/></a></li>
-							<li class="fd"><a data-hover="Rooms" href="login.jsp"><img src="img/childmenu5.png"/></a></li>
-							<li class="fd"><a href="register.jsp" data-hover="codes"><img src="img/childmenu6.png"/></a></li>
-	 						
-							 
-						  </ul>
-						</div><!-- /.navbar-collapse -->
-					</div><!-- /.container-fluid -->
-				</nav>
-			<div class="clearfix"></div>
-			</div>	
-		</div> 
-	</div>
+
     	
     
 	<div class="banner-section">
@@ -134,7 +106,44 @@
 				</ul>
 			</div>
 		</section>
-		
+
+
+		<div class="header">
+			<div class="container">
+				<div class="header-menu">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<div class="navbar-brand logo">
+									<h1><a href="#"><img src="img/LOGO-1 - 副本1.png"></h1>
+								</div>
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="index1.jsp" data-hover="Home"><img src="img/zc1.png"></a></li>
+									<li class="fd"><a href="/TicketServlet?method=getAllTickets" data-hover="About"><img src="img/zc2.png"></a></li>
+									<li class="fd"><a data-hover="Restaurant" href="rooms.jsp" ><img src="img/zc3.png"></a></li>
+									<li class="fd"><a data-hover="Gallery" href="/servlet/TranvelServlet?method=findTravelEntity"><img src="img/zc4.png"></a></li>
+									<li class="fd"><a data-hover="Rooms" href="login.jsp" ><img src="img/zc5.png"></a></li>
+									<li class="fd"><a href="register.jsp" data-hover="codes"><img src="img/zc6.png"></a></li>
+
+
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container-fluid -->
+					</nav>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
 			<!-- FlexSlider -->
 			<script defer src="js/jquery.flexslider.js"></script>
 				<script type="text/javascript">
@@ -160,7 +169,7 @@
 			<div class="welcome">
 				<div class="container">
 				  
-					  <h2 class="tittle"  ><strong class="txtwav bounce">Welcome To 蓝鲸灵</strong></h2>
+					  <h2 class="tittle"  ><strong class="txtwav bounce" style="color: #58cdff;">Welcome To 蓝鲸灵</strong></h2>
 				  
 				  <p class="wel text text-center"><strong style="color: #58cdff;" class="txtwav flip">享受快乐</strong></p>
 				  <p class="wel text text-center"><strong style="color: #58cdff;"class="txtwav flip">享受生活</strong></p>

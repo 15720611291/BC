@@ -72,13 +72,13 @@ div#bs-example-navbar-collapse-1 {
 	margin:0 0.8em;
 }
 .active img:hover{
-	transform: scale(2);
+	transform: scale(1.2);
 }
 .img-responsive gray:hover{
 	transform: scale(2);
 }
 .fd img:hover{
-	transform: scale(2);
+	transform: scale(1.2);
 }
 .welcome{
 	background: rgba(0, 173, 138, 0.06);
@@ -839,8 +839,8 @@ h3.tittle1{
     border-radius: 2px;
 }
 .gray:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter:saturate(3);
+    filter:saturate(3);
 }
 /*--codes--*/
 .page-header h3{
@@ -952,807 +952,1010 @@ ul.nav.nav-pills {
 
 /**responsive**/
 
-@media(max-width:1440px){
-.banner-text {
-    width: 8%;
-}
-@media(max-width:1366px){
-.banner-text {
-    width: 8.5%;
-}
-}
-@media(max-width:1280px){
-.banner-text {
-    width: 9%;
-}	
-}
-@media(max-width:1080px){
-.banner-text {
-    width: 8.9%;
-}
-h2.tittle {
-    font-size: 2.8em;	
-}
-h3.tittle,.banner-text h3,h3.tittle1 {
-    font-size: 2.8em;
-}
-p.wel.text {
-    width: 60%;
-	font-size:0.965em;
-}
-.cap h4,.super-grid1 h4,.footer-grid h4 ,.about-grid h4,.rest-grid h4,.rest-grid1 h4,.wel-grid h4,.contact-left h4{
-    font-size: 1.5em;
-}
+@media(max-width:1440px) {
+    .banner-text {
+        width: 8%;
+    }
 
-ul.cap1 li {
-  padding: 0.6em 0;
-}
-.wel-grid p,.cap p,.super-grid1 p,.testimonial-right p,.about-grid p,.team-grids p,.rest-grid p,.rates-text p, .rates-text1 p,.contact-left p,.rest-grid1 p {
-    font-size: 0.965em;
-}
-.list ul li {
-    line-height: 1.5em;
-    padding: 0.5em 0;
-}
-.testimonial-right:before {
-    left: 63px;
-}
-.testimonial-left {
-    float: left;
-    width: 14%;
-}
-.footer-grid ul li{
-	 font-size: 0.96em;
-}
-.team-grids h5 {
-    font-size: 1.5em;
-}
-.team-grids {
-    padding: 0.75em 2em;
-    width: 22%;
-}
-.rest-grid h3,.rest-grid1 h3 {
-    font-size: 1.8em;
-}
-.rates-text h4, .rates-text1 h4 {
-    font-size: 2em;
-}
-.contact-left input[type="email"] {
-    margin: 0 5px;
-}
-.contact-left ul li {
-    font-size: 0.96em;
-}
-.welcome,.resort-section,.superlist,.testimonial-section,.footer-section, .team,.about-section, .gallery,.reservation,.rooms-rates, .page, .restaurant {
-    padding: 4em 0;
-}
-}
-@media(max-width:1024px){
-.banner-text {
-    width: 9.3%;
-}
-}
-@media(max-width:991px){
-.banner-text {
-    width: 7.5%;
-	top: 30%;
-}
-.logo a {
-    font-size: 1em;
-}	
-.navbar-default .navbar-nav > li > a {
-    margin: 0 0.5em;
-}
-.navbar-brand {
-    padding: 6px 15px;
-}
-.wel-grid {
-    float: left;
-    width: 25%;
-}
-p.wel.text {
-    width: 76%;
-}
-.list ul li {
-    line-height: 1.5em;
-    padding: 0.5em 0;
-    display: block;
-}
-.cap-img img {
-    width: 100%;
-}
-.deatils-left {
-    padding: 0;
-}
-.super-grid {
-    float: left;
-    width: 60%;
-}
-.super-grid1 {
-    float: left;
-    width: 40%;
-}
-.super-left {
-    width: 50%;
-	float: left;
-}
-.super-right {
-    width: 50%;
-	float: left;
-}
-.testimonial-right:before {
-    left: 99px;
-}
-.cap {
-    margin-top: 2em;
-}
-.test3 {
-    margin-top: 3em;
-}
-.footer-grid {
-    float: left;
-    width: 50%;
-}
-.footer-grid:nth-child(3),.footer-grid:nth-child(4) {
-    margin-top: 2em;
-}
-.cap h4, .super-grid1 h4, .footer-grid h4, .about-grid h4, .rest-grid h4, .wel-grid h4, .contact-left h4 ,.rest-grid1 h4{
-    font-size: 1.4em;
-}
-.about-left {
-    float: left;
-    width: 50%;
-}
-.about-right {
-    float: left;
-    width: 50%;
-}
-.about-grid:nth-child(2) {
-    margin-top: 2em;
-}
-.statistics-grid {
-    float: left;
-    width: 25%;
-}
-.team-grids {
-    padding: 5em;
-    width: 49%;
-    float: left;
-}
-.team-grids.team-mdl {
-    margin: 0 0em 0 1em;
-}
-.team-grids.team-mdl1 {
-    margin-right: 1em;
-}
-.team-grids:nth-child(3),.team-grids:nth-child(4) {
-    margin-top: 2em;
-}
-.team-grids h5 {
-    font-size: 1.35em;
-}
-.gal-gd {
-    width: 33.33%;
-    float: left;
-    padding: 0 5px;
-}
-.gal-gd-sec {
-    float: left;
-    width: 50%;
-    padding: 0 5px;
-}
-.gal-gd-sec {
-    margin: 5px 0;
-}
-.rest-grid {
-    width: 60%;
-    float: left;
-}
-.rest-grid1 {
-    width: 40%;
-    float: left;
-}
-.rest-left {
-    float: left;
-    width: 50%;
-}
-.rest-right {
-    float: left;
-    width: 50%;
-}
-.reser-grid {
-    float: left;
-    width: 33.3%;
-}
-.book_date input[type="date"] {
-    width: 90%;
-}
-.rates-text h5, .rates-text1 h5 {
-    font-size: 1.8em;
-}
-.contact-left {
-    float: left;
-    width: 40%;
-}
-.cont {
-    float: left;
-    width: 60%;
-}
-.contact-left input[type="text"], .contact-left input[type="email"] {
-    width: 32.5%;
-    float: left;
-}
-.contact-left input[type="submit"], .contact-left input[type="reset"] {
-    width: 48.68%;
-}
-.contact-bottom iframe {
-    width: 100%;
-    min-height: 340px;
-}
-}
-@media (max-width: 768px){
-.banner-text {
-    width: 9.5%;
-}
-}
-@media(max-width:736px){
-.navbar-toggle {
-    padding: 9px 10px;
-    margin-top: 6px;
-	margin-right: 0px
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #222;
-}
-.navbar-toggle {
-    background-color: #222;
-}
-.navbar-default .navbar-toggle {
-    border-color: #222;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-}
-div#bs-example-navbar-collapse-1 {
-    float: none;
-    padding-top: 0.4em;
-}
-.navbar-nav {
-    float: none;
-    margin: 0.5em 0;
-    text-align: center;
-}
-.banner {
-    min-height: 80px !important;
-}
-p.wel.text {
-    width: 79%;
-}
-h2.tittle {
-    font-size: 2.5em;
-}
-h3.tittle, .banner-text h3, h3.tittle1 {
-    font-size: 2.5em;
-}
-.banner-text {
-    width: 9.5%;
-	top: 36%;
-}
-.statistics-grid h5 {
-    font-size: 1.4em;
-}
+    @media (max-width: 1366px) {
+        .banner-text {
+            width: 8.5%;
+        }
+    }
+    @media (max-width: 1280px) {
+        .banner-text {
+            width: 9%;
+        }
+    }
+    @media (max-width: 1080px) {
+        .banner-text {
+            width: 8.9%;
+        }
 
-.team-grids {
-    padding: 4em;
-    width: 48%;
-    float: left;
-}
-.rates-text h4, .rates-text1 h4 {
-    font-size: 1.8em;
-}
-.resort-grids, .super-grids,.testimonial-grids,.wel-grids, .about-grids, .statistics-grids,.team-row,.rates-grids,.rest-grids,.gal-btm {
-    margin-top: 3em;
-}
-.cap h4, .super-grid1 h4, .footer-grid h4, .about-grid h4, .rest-grid h4, .wel-grid h4, .contact-left h4, .rest-grid1 h4 {
-    font-size: 1.34em;
-}
-.contact-left input[type="text"], .contact-left input[type="email"] {
-    width: 32.4%;
-    float: left;
-}
-.contact-bottom iframe {
-    width: 100%;
-    min-height: 270px;
-}
-}
-@media(max-width:667px){
-p.wel.text {
-    width: 87%;
-}
-.navbar-brand {
-    padding: 6px 0px;
-}
-h3.tittle, .banner-text h3, h3.tittle1 {
-    font-size: 2.4em;
-}
-.welcome, .resort-section, .superlist, .testimonial-section, .footer-section, .team, .about-section, .gallery, .reservation, .rooms-rates, .page, .restaurant,.contact {
-    padding: 3em 0;
-}
-h2.tittle {
-    font-size: 2.3em;
-}
-.wel-grid {
-    float: left;
-    width: 50%;
-}
-.wel-grid:nth-child(3),.wel-grid:nth-child(4) {
-    margin-top: 2em;
-}
-.testimonial-right:before {
-    left: 85px;
-}
-.numscroller {
-    font-size: 2em;	
-}
-.statistics-grid h5 {
-    font-size: 1.3em;
-}
-.statistics {
-    min-height: 245px;
-	padding: 3em 0;
-}
-.rest-grid {
-    width: 100%;
-}
-.rest-grid1 {
-    width: 100%;
-	margin-top: 2em;
-}
-.book_date input[type="date"] {
-    width: 88%;
-}
-.rates-text {
-    width: 100%;
-    top: 22em;
-    right: 0;
-    padding: 2em 2em 0;
-    height: 53%;
-}
-.rates-text1 {
-    width: 100%;
-    top: 30em;
-    right: 0;
-    padding: 2em 2em 0;
-    height: 35%;
-}
-.rate1 {
-    padding: 8em 0;
-}
-.contact-left {
-    float: left;
-    width: 100%;
-}
-.cont {
-    float: left;
-    width: 100%;
-	margin-top:2em;
-}
-.contact-left input[type="text"], .contact-left input[type="email"] {
-    width: 32.7%;
-    float: left;
-}
-.nd-title {
-    color: #fff;
-    padding: 0 12px 15px;
-}
-}
-@media(max-width:640px){
-.team-grids {
-    padding: 3em;
-    width: 48%;	
-}
-.statistics-grid h5 {
-    font-size: 1.2em;
-}
-.rates-text {
-    width: 100%;
-    top: 22em;
-	   
-}
-}
-@media(max-width:600px){
-p.wel.text {
-    width: 98%;
-    font-size: 0.96em;
-}
-.wel-grid p, .cap p, .super-grid1 p, .testimonial-right p, .about-grid p, .team-grids p, .rest-grid p, .rates-text p, .rates-text1 p, .contact-left p, .rest-grid1 p {
-    font-size: 0.96em;
-}
-h3.tittle, .banner-text h3, h3.tittle1 {
-    font-size: 2em;
-}
-h2.tittle {
-    font-size: 2em;
-}
-.super-grid {
-    width: 100%;
-}
-.super-grid1 {
-    width: 100%;
-    margin-top: 2em;
-}
-.statistics-grid h5 {
-    font-size: 1.1em;
-}
-.team-grids {
-    padding: 2.9em;	
-}
-.book_date {
-    padding: 6px 2px;
-    border: 1px solid #00AD8A;
-    margin-bottom: 6px;
-}
-.rate1 {
-    padding: 10em 0;
-}
-.rates-text {
-    height: 57%;
-}
-}
-@media(max-width:538px){
-.team-grids {
-    padding: 2.2em;
-    width: 50%;
-}
-.gal-gd {
-    width: 100%;
-    float: none;
-    padding: 0px 5px;
-}
-.nd-wrap {
-    width: 100%;
-}
-.nd-title {
-   font-size: 1.3em;
-}
-.gal-gd-sec {
-    width: 100%;
-    float: none;
-}
-.reser-grid {
-    float: left;
-    width: 100%;
-}
-.reser-grid:nth-child(2) {
-    margin: 2em 0;
-}
-.rates-text {
-    height: 59%;
-    width: 100%;
-    top: 21em;
-}
-}
-@media(max-width:480px){
-.testimonial-right:before {
-    left: 59px;
-}
-p.wel.text {
-    width: 82%;
-}
-.cap ,.cap-img{
-    padding: 0;
-}
-.team-grids {
-    padding: 1em; 
-	width: 48%;
-}
-.statistics-grid {
-    float: left;
-    width: 50%;
-}
-.statistics-grid:nth-child(3),.statistics-grid:nth-child(4) {
-    margin-top: 2em;
-}
-.contact-left input[type="text"], .contact-left input[type="email"] {
-    width: 100%;
-    float: left;
-}
-.contact-left input[type="email"] {
-    margin: 11px 0;
-}
-.contact-left textarea {
-    min-height: 155px;
-}
-.contact-bottom {
-    margin: 2em 0;
-}
-.contact-bottom iframe {
-    width: 100%;
-    min-height: 190px;
-}
-.contact-left input[type="text"], .contact-left input[type="email"], .contact-left textarea {
-    padding: 8px 10px;
-}
-.banner-text {
-    width: 9.5%;
-    top: 25%;
-}
-.rates-text {
-	top: 16em;
-    height: 75%;
-}
-.rates-text1 {
-    height: 38%; 
-	top: 26em;
-}
-}
-@media(max-width:414px){
-p.wel.text {
-    width: 98%;
-}
-.wel-grid {
-    float: left;
-    width: 100%;
-}
-.wel-grid:nth-child(2){
-    margin-top: 2em;
-}
-.resort-grids, .super-grids, .testimonial-grids, .wel-grids, .about-grids, .statistics-grids,.team-row, .rates-grids, .rest-grids, .gal-btm {
-    margin-top: 2em;
-}
-.banner-text {
-    width: 9.2%;
-    top: 29%;
-}
-.banner-text h3 {
-    font-size: 1.8em;
-}
-.logo a {
-    font-size: 0.95em;
-}
-.navbar-brand {
-    padding: 3px 0px;
-}
-.welcome, .resort-section, .superlist, .testimonial-section, .footer-section, .team, .about-section, .gallery, .reservation, .rooms-rates, .page, .restaurant,.contact {
-    padding: 2em 0;
-}
-.list ul li {
-    line-height: 1.8em;
-}
-.super-left {
-    width: 100%;
-   padding: 0;
-}
-.super-right {
-    width: 100%;
-    padding: 0;
-	margin-top:2em;
-}
-.footer-grid {
-    float: left;
-    width: 100%;
-}
-.footer-grid:nth-child(2){
-    margin-top: 2em;
-}
-.testimonial-right {
-    width: 100%;
-}
-.testimonial-left {
-    width: 30%;
-    margin: 0 9em;
-}
-.testimonial-right:before {
-    left: -14px;
-    top: 140px;
-}
-.testimonial-right h5 {
-    font-size: 1.3em;
-}
-.testimonial-right {
-    width: 100%;
-	margin: 2em 0px 0px 11px;
-}
-.team-grids {
-    padding: 5em;
-    width: 100%;
-}
-.team-grids.team-mdl {
-    margin: 1em  0em 0 0em;
-}
-.about-left {
-    width: 100%;
-}
-.about-right {
-   margin-top:2em;
-    width: 100%;
-}
-.rest-left {
-    width: 100%;
-	padding: 0;
+        h2.tittle {
+            font-size: 2.8em;
+        }
 
-}
-.rest-right {
-    width: 100%;
-	padding: 0;
-	margin-top: 2em;
+        h3.tittle, .banner-text h3, h3.tittle1 {
+            font-size: 2.8em;
+        }
 
-}
-.rates-text {
-    width: 100%;
-    top: 11em;
-    right: 0;
-    padding: 2em 1em 0;
-    height: 100%;
-}
-.rates-text1 {
-    width: 100%;
-    top: 21em;
-    right: 0;
-    padding: 2em 1em 0;
-    height: 47%;
-}
-.rates-text h4, .rates-text1 h4 {
-    font-size: 1.5em;
-}
-.best-hot input[type="submit"] {
-    margin-top: 0.5em;
-}
-.gal-gd, .gal-gd-sec {
-    padding: 0;
-}
-.page-header h3 {
-    font-size: 1.6em;
-}
-h1#h1-bootstrap-heading {
-    font-size: 1.6em;
-}
-h2#h2-bootstrap-heading {
-    font-size: 1.5em;
-}
-h3#h3-bootstrap-heading {
-    font-size: 1.4em;
-}
-.page-header h3 {
-    font-size: 1.6em;
-}
-button.btn.btn-lg {
-    font-size: 0.9em;
-    margin: 0 0 0.5em 0px;
-    padding: 9px;
-}
-span.label {
-    margin: 0 0 0.5em;
-    display: inline-block;
-	    font-size: 53%;
-}
-.banner {
-    min-height: 62px !important;
-}
-}
-@media (max-width: 384px){
-.logo a {
-    font-size: 0.9em;
-}
-h3.tittle, h3.tittle1 {
-    font-size: 1.8em;
-}
-h2.tittle {
-    font-size: 1.8em;
-}
-.cap h4, .super-grid1 h4, .footer-grid h4, .about-grid h4, .rest-grid h4, .wel-grid h4, .contact-left h4, .rest-grid1 h4 {
-    font-size: 1.3em;
-}
-.numscroller {
-    font-size: 1.5em;
-}
-.rest-grid h3, .rest-grid1 h3 {
-    font-size: 1.5em;
-}
-.rate1 {
-    padding: 12em 0;
-}
-.rates-text {
- 
-    height: 112%;
-}
-.testimonial-left {
-    width: 30%;
-    margin: 0 8em;
-}
-}
-@media (max-width: 320px){
-.banner-text h3 {
-    font-size: 1.5em;
-}
-.logo a {
-    font-size: 0.85em;
-}
-.wel-grid,.about-left,.super-grid,.about-right,.rest-grid,.rest-grid1,.reser-grid,.footer-grid,.contact-left,.contact-left {
-    padding: 0;
-}
-ul.cap1 li {
-    letter-spacing: 0.7px;
-    line-height: 1.5em;
-    margin-right: 0;
-}
-.cap h4{
-	 line-height: 1.5em;
-}
-h3.tittle, h3.tittle1 {
-     line-height: 1.2em;
-}
-.welcome, .resort-section, .superlist, .testimonial-section, .footer-section, .team, .about-section, .gallery, .reservation, .rooms-rates, .page, .restaurant, .contact {
-    padding: 2em 0;
-}
-.rest-grid h3, .rest-grid1 h3 {
-    font-size: 1.3em;
-}
-.testimonial-text {
-    float: none;
-    text-align: center;
-}
-.testimonial-rating {
-    float: none;
-    text-align: center;
-	margin-top: 1em;
-}
-.testimonial-left {
-    margin: 0 6em;
-}
-.resort-grids, .super-grids, .testimonial-grids, .wel-grids, .about-grids, .statistics-grids,.team-row, .rates-grids, .rest-grids, .gal-btm {
-    margin-top: 1em;
-}
-.testimonial-right {
-    width: 100%;
-    margin: 1em 0px 0px 11px;
-}
-.test3 {
-    margin-top: 2em;
-}
-.team-grids {
-    padding: 3em;
-}
-.rest-bottom {
-    margin-top: 2em;
-}
-.rest-grid p {
-    padding-top: 0.5em;
-}
-.best-hot input[type="submit"] {
-    margin-top: 1.5em;
-}
-.lastest-top {
-    margin-top: 2em;
-}
-.reser-grid:nth-child(2) {
-    margin: 0.8em 0;
-}
-.reservation-grids {
-    margin-top: 1em;
-}
-.rate1 {
-    padding: 17em 0;
-}
-.rates-text {
-    height: 146%;
-}
-.rates-text h5, .rates-text1 h5 {
-    font-size: 1.5em;
-}
-.rates-text1 {
-    width: 100%;
-    top: 27em;
-    right: 0;
-    padding: 2em 1em 0;
-    height: 42%;
-}
-.rates-text {
-    top: 10em;
-}
-.footer-grid:nth-child(2),.footer-grid:nth-child(3), .footer-grid:nth-child(4) {
-    margin-top: 1em;
-}
-.contact-bottom {
-    margin: 1em 0;
+        p.wel.text {
+            width: 60%;
+            font-size: 0.965em;
+        }
+
+        .cap h4, .super-grid1 h4, .footer-grid h4, .about-grid h4, .rest-grid h4, .rest-grid1 h4, .wel-grid h4, .contact-left h4 {
+            font-size: 1.5em;
+        }
+
+        ul.cap1 li {
+            padding: 0.6em 0;
+        }
+
+        .wel-grid p, .cap p, .super-grid1 p, .testimonial-right p, .about-grid p, .team-grids p, .rest-grid p, .rates-text p, .rates-text1 p, .contact-left p, .rest-grid1 p {
+            font-size: 0.965em;
+        }
+
+        .list ul li {
+            line-height: 1.5em;
+            padding: 0.5em 0;
+        }
+
+        .testimonial-right:before {
+            left: 63px;
+        }
+
+        .testimonial-left {
+            float: left;
+            width: 14%;
+        }
+
+        .footer-grid ul li {
+            font-size: 0.96em;
+        }
+
+        .team-grids h5 {
+            font-size: 1.5em;
+        }
+
+        .team-grids {
+            padding: 0.75em 2em;
+            width: 22%;
+        }
+
+        .rest-grid h3, .rest-grid1 h3 {
+            font-size: 1.8em;
+        }
+
+        .rates-text h4, .rates-text1 h4 {
+            font-size: 2em;
+        }
+
+        .contact-left input[type="email"] {
+            margin: 0 5px;
+        }
+
+        .contact-left ul li {
+            font-size: 0.96em;
+        }
+
+        .welcome, .resort-section, .superlist, .testimonial-section, .footer-section, .team, .about-section, .gallery, .reservation, .rooms-rates, .page, .restaurant {
+            padding: 4em 0;
+        }
+    }
+    @media (max-width: 1024px) {
+        .banner-text {
+            width: 9.3%;
+        }
+    }
+    @media (max-width: 991px) {
+        .banner-text {
+            width: 7.5%;
+            top: 30%;
+        }
+
+        .logo a {
+            font-size: 1em;
+        }
+
+        .navbar-default .navbar-nav > li > a {
+            margin: 0 0.5em;
+        }
+
+        .navbar-brand {
+            padding: 6px 15px;
+        }
+
+        .wel-grid {
+            float: left;
+            width: 25%;
+        }
+
+        p.wel.text {
+            width: 76%;
+        }
+
+        .list ul li {
+            line-height: 1.5em;
+            padding: 0.5em 0;
+            display: block;
+        }
+
+        .cap-img img {
+            width: 100%;
+        }
+
+        .deatils-left {
+            padding: 0;
+        }
+
+        .super-grid {
+            float: left;
+            width: 60%;
+        }
+
+        .super-grid1 {
+            float: left;
+            width: 40%;
+        }
+
+        .super-left {
+            width: 50%;
+            float: left;
+        }
+
+        .super-right {
+            width: 50%;
+            float: left;
+        }
+
+        .testimonial-right:before {
+            left: 99px;
+        }
+
+        .cap {
+            margin-top: 2em;
+        }
+
+        .test3 {
+            margin-top: 3em;
+        }
+
+        .footer-grid {
+            float: left;
+            width: 50%;
+        }
+
+        .footer-grid:nth-child(3), .footer-grid:nth-child(4) {
+            margin-top: 2em;
+        }
+
+        .cap h4, .super-grid1 h4, .footer-grid h4, .about-grid h4, .rest-grid h4, .wel-grid h4, .contact-left h4, .rest-grid1 h4 {
+            font-size: 1.4em;
+        }
+
+        .about-left {
+            float: left;
+            width: 50%;
+        }
+
+        .about-right {
+            float: left;
+            width: 50%;
+        }
+
+        .about-grid:nth-child(2) {
+            margin-top: 2em;
+        }
+
+        .statistics-grid {
+            float: left;
+            width: 25%;
+        }
+
+        .team-grids {
+            padding: 5em;
+            width: 49%;
+            float: left;
+        }
+
+        .team-grids.team-mdl {
+            margin: 0 0em 0 1em;
+        }
+
+        .team-grids.team-mdl1 {
+            margin-right: 1em;
+        }
+
+        .team-grids:nth-child(3), .team-grids:nth-child(4) {
+            margin-top: 2em;
+        }
+
+        .team-grids h5 {
+            font-size: 1.35em;
+        }
+
+        .gal-gd {
+            width: 33.33%;
+            float: left;
+            padding: 0 5px;
+        }
+
+        .gal-gd-sec {
+            float: left;
+            width: 50%;
+            padding: 0 5px;
+        }
+
+        .gal-gd-sec {
+            margin: 5px 0;
+        }
+
+        .rest-grid {
+            width: 60%;
+            float: left;
+        }
+
+        .rest-grid1 {
+            width: 40%;
+            float: left;
+        }
+
+        .rest-left {
+            float: left;
+            width: 50%;
+        }
+
+        .rest-right {
+            float: left;
+            width: 50%;
+        }
+
+        .reser-grid {
+            float: left;
+            width: 33.3%;
+        }
+
+        .book_date input[type="date"] {
+            width: 90%;
+        }
+
+        .rates-text h5, .rates-text1 h5 {
+            font-size: 1.8em;
+        }
+
+        .contact-left {
+            float: left;
+            width: 40%;
+        }
+
+        .cont {
+            float: left;
+            width: 60%;
+        }
+
+        .contact-left input[type="text"], .contact-left input[type="email"] {
+            width: 32.5%;
+            float: left;
+        }
+
+        .contact-left input[type="submit"], .contact-left input[type="reset"] {
+            width: 48.68%;
+        }
+
+        .contact-bottom iframe {
+            width: 100%;
+            min-height: 340px;
+        }
+    }
+    @media (max-width: 768px) {
+        .banner-text {
+            width: 9.5%;
+        }
+    }
+    @media (max-width: 736px) {
+        .navbar-toggle {
+            padding: 9px 10px;
+            margin-top: 6px;
+            margin-right: 0px
+        }
+
+        .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+            background-color: #222;
+        }
+
+        .navbar-toggle {
+            background-color: #222;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: #222;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #fff;
+        }
+
+        div#bs-example-navbar-collapse-1 {
+            float: none;
+            padding-top: 0.4em;
+        }
+
+        .navbar-nav {
+            float: none;
+            margin: 0.5em 0;
+            text-align: center;
+        }
+
+        .banner {
+            min-height: 80px !important;
+        }
+
+        p.wel.text {
+            width: 79%;
+        }
+
+        h2.tittle {
+            font-size: 2.5em;
+        }
+
+        h3.tittle, .banner-text h3, h3.tittle1 {
+            font-size: 2.5em;
+        }
+
+        .banner-text {
+            width: 9.5%;
+            top: 36%;
+        }
+
+        .statistics-grid h5 {
+            font-size: 1.4em;
+        }
+
+        .team-grids {
+            padding: 4em;
+            width: 48%;
+            float: left;
+        }
+
+        .rates-text h4, .rates-text1 h4 {
+            font-size: 1.8em;
+        }
+
+        .resort-grids, .super-grids, .testimonial-grids, .wel-grids, .about-grids, .statistics-grids, .team-row, .rates-grids, .rest-grids, .gal-btm {
+            margin-top: 3em;
+        }
+
+        .cap h4, .super-grid1 h4, .footer-grid h4, .about-grid h4, .rest-grid h4, .wel-grid h4, .contact-left h4, .rest-grid1 h4 {
+            font-size: 1.34em;
+        }
+
+        .contact-left input[type="text"], .contact-left input[type="email"] {
+            width: 32.4%;
+            float: left;
+        }
+
+        .contact-bottom iframe {
+            width: 100%;
+            min-height: 270px;
+        }
+    }
+    @media (max-width: 667px) {
+        p.wel.text {
+            width: 87%;
+        }
+
+        .navbar-brand {
+            padding: 6px 0px;
+        }
+
+        h3.tittle, .banner-text h3, h3.tittle1 {
+            font-size: 2.4em;
+        }
+
+        .welcome, .resort-section, .superlist, .testimonial-section, .footer-section, .team, .about-section, .gallery, .reservation, .rooms-rates, .page, .restaurant, .contact {
+            padding: 3em 0;
+        }
+
+        h2.tittle {
+            font-size: 2.3em;
+        }
+
+        .wel-grid {
+            float: left;
+            width: 50%;
+        }
+
+        .wel-grid:nth-child(3), .wel-grid:nth-child(4) {
+            margin-top: 2em;
+        }
+
+        .testimonial-right:before {
+            left: 85px;
+        }
+
+        .numscroller {
+            font-size: 2em;
+        }
+
+        .statistics-grid h5 {
+            font-size: 1.3em;
+        }
+
+        .statistics {
+            min-height: 245px;
+            padding: 3em 0;
+        }
+
+        .rest-grid {
+            width: 100%;
+        }
+
+        .rest-grid1 {
+            width: 100%;
+            margin-top: 2em;
+        }
+
+        .book_date input[type="date"] {
+            width: 88%;
+        }
+
+        .rates-text {
+            width: 100%;
+            top: 22em;
+            right: 0;
+            padding: 2em 2em 0;
+            height: 53%;
+        }
+
+        .rates-text1 {
+            width: 100%;
+            top: 30em;
+            right: 0;
+            padding: 2em 2em 0;
+            height: 35%;
+        }
+
+        .rate1 {
+            padding: 8em 0;
+        }
+
+        .contact-left {
+            float: left;
+            width: 100%;
+        }
+
+        .cont {
+            float: left;
+            width: 100%;
+            margin-top: 2em;
+        }
+
+        .contact-left input[type="text"], .contact-left input[type="email"] {
+            width: 32.7%;
+            float: left;
+        }
+
+        .nd-title {
+            color: #fff;
+            padding: 0 12px 15px;
+        }
+    }
+    @media (max-width: 640px) {
+        .team-grids {
+            padding: 3em;
+            width: 48%;
+        }
+
+        .statistics-grid h5 {
+            font-size: 1.2em;
+        }
+
+        .rates-text {
+            width: 100%;
+            top: 22em;
+
+        }
+    }
+    @media (max-width: 600px) {
+        p.wel.text {
+            width: 98%;
+            font-size: 0.96em;
+        }
+
+        .wel-grid p, .cap p, .super-grid1 p, .testimonial-right p, .about-grid p, .team-grids p, .rest-grid p, .rates-text p, .rates-text1 p, .contact-left p, .rest-grid1 p {
+            font-size: 0.96em;
+        }
+
+        h3.tittle, .banner-text h3, h3.tittle1 {
+            font-size: 2em;
+        }
+
+        h2.tittle {
+            font-size: 2em;
+        }
+
+        .super-grid {
+            width: 100%;
+        }
+
+        .super-grid1 {
+            width: 100%;
+            margin-top: 2em;
+        }
+
+        .statistics-grid h5 {
+            font-size: 1.1em;
+        }
+
+        .team-grids {
+            padding: 2.9em;
+        }
+
+        .book_date {
+            padding: 6px 2px;
+            border: 1px solid #00AD8A;
+            margin-bottom: 6px;
+        }
+
+        .rate1 {
+            padding: 10em 0;
+        }
+
+        .rates-text {
+            height: 57%;
+        }
+    }
+    @media (max-width: 538px) {
+        .team-grids {
+            padding: 2.2em;
+            width: 50%;
+        }
+
+        .gal-gd {
+            width: 100%;
+            float: none;
+            padding: 0px 5px;
+        }
+
+        .nd-wrap {
+            width: 100%;
+        }
+
+        .nd-title {
+            font-size: 1.3em;
+        }
+
+        .gal-gd-sec {
+            width: 100%;
+            float: none;
+        }
+
+        .reser-grid {
+            float: left;
+            width: 100%;
+        }
+
+        .reser-grid:nth-child(2) {
+            margin: 2em 0;
+        }
+
+        .rates-text {
+            height: 59%;
+            width: 100%;
+            top: 21em;
+        }
+    }
+    @media (max-width: 480px) {
+        .testimonial-right:before {
+            left: 59px;
+        }
+
+        p.wel.text {
+            width: 82%;
+        }
+
+        .cap, .cap-img {
+            padding: 0;
+        }
+
+        .team-grids {
+            padding: 1em;
+            width: 48%;
+        }
+
+        .statistics-grid {
+            float: left;
+            width: 50%;
+        }
+
+        .statistics-grid:nth-child(3), .statistics-grid:nth-child(4) {
+            margin-top: 2em;
+        }
+
+        .contact-left input[type="text"], .contact-left input[type="email"] {
+            width: 100%;
+            float: left;
+        }
+
+        .contact-left input[type="email"] {
+            margin: 11px 0;
+        }
+
+        .contact-left textarea {
+            min-height: 155px;
+        }
+
+        .contact-bottom {
+            margin: 2em 0;
+        }
+
+        .contact-bottom iframe {
+            width: 100%;
+            min-height: 190px;
+        }
+
+        .contact-left input[type="text"], .contact-left input[type="email"], .contact-left textarea {
+            padding: 8px 10px;
+        }
+
+        .banner-text {
+            width: 9.5%;
+            top: 25%;
+        }
+
+        .rates-text {
+            top: 16em;
+            height: 75%;
+        }
+
+        .rates-text1 {
+            height: 38%;
+            top: 26em;
+        }
+    }
+    @media (max-width: 414px) {
+        p.wel.text {
+            width: 98%;
+        }
+
+        .wel-grid {
+            float: left;
+            width: 100%;
+        }
+
+        .wel-grid:nth-child(2) {
+            margin-top: 2em;
+        }
+
+        .resort-grids, .super-grids, .testimonial-grids, .wel-grids, .about-grids, .statistics-grids, .team-row, .rates-grids, .rest-grids, .gal-btm {
+            margin-top: 2em;
+        }
+
+        .banner-text {
+            width: 9.2%;
+            top: 29%;
+        }
+
+        .banner-text h3 {
+            font-size: 1.8em;
+        }
+
+        .logo a {
+            font-size: 0.95em;
+        }
+
+        .navbar-brand {
+            padding: 3px 0px;
+        }
+
+        .welcome, .resort-section, .superlist, .testimonial-section, .footer-section, .team, .about-section, .gallery, .reservation, .rooms-rates, .page, .restaurant, .contact {
+            padding: 2em 0;
+        }
+
+        .list ul li {
+            line-height: 1.8em;
+        }
+
+        .super-left {
+            width: 100%;
+            padding: 0;
+        }
+
+        .super-right {
+            width: 100%;
+            padding: 0;
+            margin-top: 2em;
+        }
+
+        .footer-grid {
+            float: left;
+            width: 100%;
+        }
+
+        .footer-grid:nth-child(2) {
+            margin-top: 2em;
+        }
+
+        .testimonial-right {
+            width: 100%;
+        }
+
+        .testimonial-left {
+            width: 30%;
+            margin: 0 9em;
+        }
+
+        .testimonial-right:before {
+            left: -14px;
+            top: 140px;
+        }
+
+        .testimonial-right h5 {
+            font-size: 1.3em;
+        }
+
+        .testimonial-right {
+            width: 100%;
+            margin: 2em 0px 0px 11px;
+        }
+
+        .team-grids {
+            padding: 5em;
+            width: 100%;
+        }
+
+        .team-grids.team-mdl {
+            margin: 1em 0em 0 0em;
+        }
+
+        .about-left {
+            width: 100%;
+        }
+
+        .about-right {
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        .rest-left {
+            width: 100%;
+            padding: 0;
+
+        }
+
+        .rest-right {
+            width: 100%;
+            padding: 0;
+            margin-top: 2em;
+
+        }
+
+        .rates-text {
+            width: 100%;
+            top: 11em;
+            right: 0;
+            padding: 2em 1em 0;
+            height: 100%;
+        }
+
+        .rates-text1 {
+            width: 100%;
+            top: 21em;
+            right: 0;
+            padding: 2em 1em 0;
+            height: 47%;
+        }
+
+        .rates-text h4, .rates-text1 h4 {
+            font-size: 1.5em;
+        }
+
+        .best-hot input[type="submit"] {
+            margin-top: 0.5em;
+        }
+
+        .gal-gd, .gal-gd-sec {
+            padding: 0;
+        }
+
+        .page-header h3 {
+            font-size: 1.6em;
+        }
+
+        h1#h1-bootstrap-heading {
+            font-size: 1.6em;
+        }
+
+        h2#h2-bootstrap-heading {
+            font-size: 1.5em;
+        }
+
+        h3#h3-bootstrap-heading {
+            font-size: 1.4em;
+        }
+
+        .page-header h3 {
+            font-size: 1.6em;
+        }
+
+        button.btn.btn-lg {
+            font-size: 0.9em;
+            margin: 0 0 0.5em 0px;
+            padding: 9px;
+        }
+
+        span.label {
+            margin: 0 0 0.5em;
+            display: inline-block;
+            font-size: 53%;
+        }
+
+        .banner {
+            min-height: 62px !important;
+        }
+    }
+    @media (max-width: 384px) {
+        .logo a {
+            font-size: 0.9em;
+        }
+
+        h3.tittle, h3.tittle1 {
+            font-size: 1.8em;
+        }
+
+        h2.tittle {
+            font-size: 1.8em;
+        }
+
+        .cap h4, .super-grid1 h4, .footer-grid h4, .about-grid h4, .rest-grid h4, .wel-grid h4, .contact-left h4, .rest-grid1 h4 {
+            font-size: 1.3em;
+        }
+
+        .numscroller {
+            font-size: 1.5em;
+        }
+
+        .rest-grid h3, .rest-grid1 h3 {
+            font-size: 1.5em;
+        }
+
+        .rate1 {
+            padding: 12em 0;
+        }
+
+        .rates-text {
+
+            height: 112%;
+        }
+
+        .testimonial-left {
+            width: 30%;
+            margin: 0 8em;
+        }
+    }
+    @media (max-width: 320px) {
+        .banner-text h3 {
+            font-size: 1.5em;
+        }
+
+        .logo a {
+            font-size: 0.85em;
+        }
+
+        .wel-grid, .about-left, .super-grid, .about-right, .rest-grid, .rest-grid1, .reser-grid, .footer-grid, .contact-left, .contact-left {
+            padding: 0;
+        }
+
+        ul.cap1 li {
+            letter-spacing: 0.7px;
+            line-height: 1.5em;
+            margin-right: 0;
+        }
+
+        .cap h4 {
+            line-height: 1.5em;
+        }
+
+        h3.tittle, h3.tittle1 {
+            line-height: 1.2em;
+        }
+
+        .welcome, .resort-section, .superlist, .testimonial-section, .footer-section, .team, .about-section, .gallery, .reservation, .rooms-rates, .page, .restaurant, .contact {
+            padding: 2em 0;
+        }
+
+        .rest-grid h3, .rest-grid1 h3 {
+            font-size: 1.3em;
+        }
+
+        .testimonial-text {
+            float: none;
+            text-align: center;
+        }
+
+        .testimonial-rating {
+            float: none;
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        .testimonial-left {
+            margin: 0 6em;
+        }
+
+        .resort-grids, .super-grids, .testimonial-grids, .wel-grids, .about-grids, .statistics-grids, .team-row, .rates-grids, .rest-grids, .gal-btm {
+            margin-top: 1em;
+        }
+
+        .testimonial-right {
+            width: 100%;
+            margin: 1em 0px 0px 11px;
+        }
+
+        .test3 {
+            margin-top: 2em;
+        }
+
+        .team-grids {
+            padding: 3em;
+        }
+
+        .rest-bottom {
+            margin-top: 2em;
+        }
+
+        .rest-grid p {
+            padding-top: 0.5em;
+        }
+
+        .best-hot input[type="submit"] {
+            margin-top: 1.5em;
+        }
+
+        .lastest-top {
+            margin-top: 2em;
+        }
+
+        .reser-grid:nth-child(2) {
+            margin: 0.8em 0;
+        }
+
+        .reservation-grids {
+            margin-top: 1em;
+        }
+
+        .rate1 {
+            padding: 17em 0;
+        }
+
+        .rates-text {
+            height: 146%;
+        }
+
+        .rates-text h5, .rates-text1 h5 {
+            font-size: 1.5em;
+        }
+
+        .rates-text1 {
+            width: 100%;
+            top: 27em;
+            right: 0;
+            padding: 2em 1em 0;
+            height: 42%;
+        }
+
+        .rates-text {
+            top: 10em;
+        }
+
+        .footer-grid:nth-child(2), .footer-grid:nth-child(3), .footer-grid:nth-child(4) {
+            margin-top: 1em;
+        }
+
+        .contact-bottom {
+            margin: 1em 0;
+        }
+    }
 }

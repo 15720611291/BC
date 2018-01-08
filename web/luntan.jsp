@@ -44,12 +44,12 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						  <ul class="nav navbar-nav">
-							<li class="active"><a href="index1.jsp" data-hover="Home"><img src="images/childmenu1.png"/></a></li>
-							<li class="fd"><a href="ticket.jsp" data-hover="About"><img src="images/childmenu2.png"/></a></li>
-							<li class="fd"><a data-hover="Restaurant" href="rooms.jsp"><img src="images/childmenu3.png"/></a></li>
-							<li class="fd"><a data-hover="Gallery" href="/servlet/TranvelServlet?method=findTravelEntity"><img src="images/childmenu4.png"/></a></li>
-							<li class="fd"><a data-hover="Rooms" href="login.jsp"><img src="images/childmenu5.png"/></a></li>
-							<li class="fd"><a  href="register.jsp" data-hover="codes"><img src="images/childmenu6.png"/></a></li>
+							  <li class="active"><a href="index1.jsp" data-hover="Home"><img src="img/zc1.png"></a></li>
+							  <li class="fd"><a href="/TicketServlet?method=getAllTickets" data-hover="About"><img src="img/zc2.png"></a></li>
+							  <li class="fd"><a data-hover="Restaurant" href="rooms.jsp" ><img src="img/zc3.png"></a></li>
+							  <li class="fd"><a data-hover="Gallery" href="/servlet/TranvelServlet?method=findTravelEntity"><img src="img/zc4.png"></a></li>
+							  <li class="fd"><a data-hover="Rooms" href="login.jsp" ><img src="img/zc5.png"></a></li>
+							  <li class="fd"><a href="register.jsp" data-hover="codes"><img src="img/zc6.png"></a></li>
 	 						
 							 
 						  </ul>
