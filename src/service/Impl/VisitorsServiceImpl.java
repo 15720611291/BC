@@ -22,29 +22,11 @@ public class VisitorsServiceImpl implements VisitorsService {
 		
 		return count!=0;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	@Override
+	public Visitors checkUser(String name) {
+		return visitorsDao.checkUser(name);
+	}
+
 
 }

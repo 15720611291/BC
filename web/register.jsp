@@ -82,8 +82,9 @@
 
 	<form action="/RegistServlet" method="post" id="registerForm">
 		<div>
-			<input type="text" name="name" class="username" placeholder="您的用户名" autocomplete="off"/>
+			<input type="text" name="name" class="username" placeholder="您的用户名" autocomplete="off" onblur="checkUser();" id="demo"/>
 		</div>
+		<div id="myDiv"></div>
 		<div>
 			<input type="password" name="password" class="password" placeholder="输入密码" oncontextmenu="return false" onpaste="return false" />
 		</div>
@@ -104,7 +105,8 @@
 	</a>-->
 
 </div>
-
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/ajax.js"></script>
 <script src="js/pdjs/txt.wav.min.js"></script>
 <script src="js/pdjs/jquery.min.js"></script>
 <script src="js/pdjs/common.js"></script>
